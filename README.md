@@ -24,7 +24,9 @@ Um die App nutzen zu können, benötigst du einen **eigenen API-Key** von OpenWe
 const apiKey = "DEIN_API_KEY_HIER";
 ```
 
-🚀 Projekt starten:
+---
+
+### 🚀 Projekt starten:
 
 Es ist kein Backend und keine Installation notwendig.
 
@@ -32,7 +34,9 @@ Es ist kein Backend und keine Installation notwendig.
 2. Erstelle die Datei config.js wie oben beschrieben
 3. Öffne index.html im Browser
 
-📁 Projektstruktur:
+---
+
+### 📁 Projektstruktur:
 
 index.html      → Hauptseite der App
 style.css       → Styling und Layout
