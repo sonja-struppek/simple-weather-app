@@ -26,7 +26,7 @@ const apiKey = "DEIN_API_KEY_HIER";
 
 ---
 
-### 🚀 Projekt starten:
+## 🚀 Projekt starten:
 
 Es ist kein Backend und keine Installation notwendig.
 
@@ -36,7 +36,7 @@ Es ist kein Backend und keine Installation notwendig.
 
 ---
 
-### 📁 Projektstruktur:
+## 📁 Projektstruktur:
 
 index.html      → Hauptseite der App
 style.css       → Styling und Layout
