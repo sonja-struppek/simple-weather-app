@@ -38,9 +38,9 @@ Es ist kein Backend und keine Installation notwendig.
 
 ## 📁 Projektstruktur:
 
-index.html      → Hauptseite der App
-style.css       → Styling und Layout
-script.js       → JavaScript-Logik (API-Abfrage, UI-Update)
-config.js       → API-Key (muss lokal erstellt werden)
-images/         → Icons für Wetterdarstellung
+- index.html      → Hauptseite der App
+- style.css       → Styling und Layout
+- script.js       → JavaScript-Logik (API-Abfrage, UI-Update)
+- config.js       → API-Key (muss lokal erstellt werden)
+- images/         → Icons für Wetterdarstellung
 
