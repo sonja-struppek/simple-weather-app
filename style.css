@@ -1,0 +1,160 @@
+/* 
+  Weather App Stylesheet
+  -----------------------
+  Provides styling for the main weather card, search input,
+  weather icons, and detail sections (humidity & wind).
+  Includes custom selection color and glow effects for the input field.
+  Theme: turquoise–purple gradient with soft shadows.
+*/
+
+
+/* Global reset and base font settings */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Page background color */
+body{
+    background-color: #222;
+}
+
+/* Custom text selection color matching the app's theme */
+::selection {
+  background: #7b67a8; 
+  color: #fff; 
+}
+
+/* Main weather card container */
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+/* Search area container */
+.search {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  margin-bottom: 20px;
+}
+
+/* Search button icon */
+.search button img{
+    width: 20px;
+}
+
+/* Main weather icon (cloud, sun, rain, etc.) */
+.weather-icon{
+    width: 170px;
+    margin-top: 30px; 
+}
+
+/* Temperature text styling */
+.weather h1{
+    font-size: 75px;
+    font-weight: 500;
+}
+
+/* City name styling */
+.weather h2{
+    font-size: 45px;
+    font-weight: 350;
+    margin-top: -10px;
+}
+
+/* Container for humidity and wind columns */
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px
+}
+
+/* Layout for each detail column */
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+/* Icons inside the detail columns */
+.col img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* Humidity and wind value styling */
+.humidity, .wind{
+    font-size: 22px;
+    margin-top: -6px;   
+}
+
+/* Weather section is hidden until valid data is loaded */
+.weather {
+    display: none;
+}
+
+/* Error message styling (shown when city is invalid) */
+.error {
+    text-align: left;
+    margin-left: 45px;
+    font-size: 14px;
+    margin-top: -10px;
+    display: none;
+}
+
+/* Wrapper for the search input and icon */
+.search-box {
+  position: relative;
+  width: 100%;
+  max-width: 350px; 
+}
+
+/* Modern search input styling */
+.search-box input {
+  width: 100%;
+  padding: 14px 50px 14px 20px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #ebfffc;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+  transition: all 0.3s ease;
+}
+
+/* Glow effect when the input field is focused */
+.search-box input:focus {
+  outline: none;
+  box-shadow: 0 0 20px rgba(0, 255, 186, 0.9); 
+  background-color: #faffff; 
+  border: none;
+  position: relative;
+}
+
+/* Search icon positioned inside the input field */
+.search-box .search-icon {
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  width: 20px; 
+  height: 20px;
+  cursor: pointer;
+  z-index: 10;
+  pointer-events: all;
+  opacity: 0.8;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  user-select: none;
+}

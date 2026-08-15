@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Weather App – HTML Structure and UI Layout -->
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple weather app using OpenWeatherMap API.">
+    <meta name="author" content="Sonja Struppek">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main weather app container -->
+    <div class="card">
+
+        <!-- Search area -->
+        <div class="search">
+            <div class="search-box">
+
+                <!-- Input field for entering a city name -->
+                <input type="text" placeholder="Stadt suchen" spellcheck="false">
+                <img src="images/search.png" class="search-icon">
+            </div>
+        </div>
+
+        <!-- Error message shown when city is not found -->
+        <div class="error">
+            <p>Ungültiger Stadtname</p>
+        </div>
+
+        <!-- Weather information section -->
+        <div class="weather">
+
+            <!-- Default values -->
+            <img src="images/rain.png" class="weather-icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">New York</h2>
+
+            <!-- Additional weather details -->
+            <div class="details">
+
+                <!-- Humidity column -->
+                <div class="col">
+                    <img src="images/humidity.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Luftfeuchtigkeit</p>
+                    </div>
+                </div>
+
+                <!-- Wind speed column -->
+                <div class="col">
+                    <img src="images/wind.png">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Windgeschwindigkeit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
